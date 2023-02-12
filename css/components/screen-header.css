@@ -52,3 +52,16 @@
 .screen-header-alt__column span {
   display: block;
 }
+
+@keyframes rotateCofig {
+  fron {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-gear:hover {
+  animation: rotateCofig 2s linear;
+}
