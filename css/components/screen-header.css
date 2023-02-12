@@ -31,10 +31,24 @@
   font-weight: 600;
 }
 
+.screen-header-alt__column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 33%;
+}
+
 .screen-header-alt__column:first-child {
   margin-right: auto;
+  justify-content: start;
 }
 
 .screen-header-alt__column:last-child {
   margin-left: auto;
+  justify-content: end;
+}
+
+.screen-header-alt__column span {
+  display: block;
 }
