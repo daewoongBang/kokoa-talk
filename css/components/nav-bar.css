@@ -26,10 +26,6 @@
 
 .more__notification {
   position: absolute;
-  width: 4px;
-  height: 4px;
-  border-radius: 2px;
   top: 0px;
   right: -3px;
-  background-color: tomato;
 }

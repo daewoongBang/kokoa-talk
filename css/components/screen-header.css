@@ -13,6 +13,7 @@
 }
 
 .screen-header__icons {
+  position: relative;
   display: inline-flex;
   gap: 20px;
 }
