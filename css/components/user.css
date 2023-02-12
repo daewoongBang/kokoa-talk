@@ -48,3 +48,22 @@
   align-items: end;
   gap: 5px;
 }
+
+.user-component__subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.change-notice {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid tomato;
+  width: 12px;
+  height: 12px;
+  color: tomato;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 5px;
+}

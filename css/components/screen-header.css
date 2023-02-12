@@ -17,3 +17,24 @@
   display: inline-flex;
   gap: 20px;
 }
+
+.screen-header-alt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  margin-bottom: 15px;
+}
+
+.screen-header-alt__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.screen-header-alt__column:first-child {
+  margin-right: auto;
+}
+
+.screen-header-alt__column:last-child {
+  margin-left: auto;
+}
