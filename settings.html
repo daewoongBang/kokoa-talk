@@ -8,7 +8,7 @@
     <title>Settings | Kokoa</title>
   </head>
 
-  <body>
+  <body class="theme-background">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -21,9 +21,9 @@
       </div>
 
       <div class="status-bar__column">
-        <span>77%</span>
+        <span>70%</span>
 
-        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
         <i class="fa-solid fa-bolt"></i>
       </div>
     </div>
@@ -56,7 +56,7 @@
         <li class="settings-setting">
           <div class="settings-setting__column">
             <i class="fa-solid fa-flask"></i>
-            <span>Kokoa Lab</span>
+            <span>Pixel Lab</span>
           </div>
         </li>
 
@@ -103,7 +103,16 @@
       </ul>
     </nav>
 
-    <div id="no-mobile">Your screen is too big.</div>
+    <div id="no-mobile">
+      <p>Your screen is too big.</p>
+
+      <p>Please reduce the screen size.</p>
+
+      <p class="no-mobile__icons">
+        <i class="fa-solid fa-arrow-right"></i>
+        <i class="fa-solid fa-arrow-left"></i>
+      </p>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/4382bb2da3.js"

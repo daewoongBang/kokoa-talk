@@ -8,7 +8,7 @@
     <title>Friends | Kokoa</title>
   </head>
 
-  <body>
+  <body class="theme-background">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -21,9 +21,9 @@
       </div>
 
       <div class="status-bar__column">
-        <span>77%</span>
+        <span>70%</span>
 
-        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
         <i class="fa-solid fa-bolt"></i>
       </div>
     </div>
@@ -39,11 +39,6 @@
         </span>
       </div>
     </header>
-
-    <a id="friends-display-link">
-      <i class="fa-solid fa-circle-info"></i> Friends' Names Display
-      <i class="fa-solid fa-chevron-right fa-xs"></i>
-    </a>
 
     <main class="friends-screen">
       <div class="user-component">
@@ -63,20 +58,19 @@
 
       <div class="friends-screen__channel">
         <div class="friends-screen__channel-header">
-          <span>Channel</span>
+          <span>Friend whose birthday is coming up</span>
           <i class="fa-solid fa-chevron-up fa-xs"></i>
         </div>
 
         <div class="user-component">
           <div class="user-component__column">
-            <img
-              src="https://avatars.githubusercontent.com/u/59325523?s=400&u=814ec9c4328e14848ccfd60c95e519c2db65c4ee"
-              class="user-component__avatar user-component__avatar--sm"
-            />
+            <div class="user-component__icon">
+              <i class="fa-solid fa-cake-candles fa-2xl"></i>
+            </div>
 
             <div class="user-component__name">
               <h4 class="user-component__title user-component__title--not-bold">
-                Channel
+                Check your friend's birthday
               </h4>
             </div>
           </div>
@@ -87,6 +81,90 @@
               <i class="fa-solid fa-chevron-right fa-xs"></i>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fa-solid fa-chevron-up fa-xs"></i>
+        </div>
+
+        <div class="user-component">
+          <div class="user-component__column">
+            <div class="user-component__icon channel_icon"></div>
+
+            <div class="user-component__name">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Channel
+              </h4>
+            </div>
+          </div>
+
+          <div class="user-component__column">
+            <div>
+              <span>68</span>
+              <i class="fa-solid fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Friends</span>
+          <i class="fa-solid fa-chevron-up fa-xs"></i>
+        </div>
+
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="images/user/profile_1.png"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+
+            <div class="user-component__name">
+              <h4 class="user-component__title user-component__title--not-bold">
+                James
+              </h4>
+            </div>
+          </div>
+
+          <div class="user-component__column"></div>
+        </div>
+
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="images/user/profile_3.png"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+
+            <div class="user-component__name">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Ally
+              </h4>
+            </div>
+          </div>
+
+          <div class="user-component__column"></div>
+        </div>
+
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="images/user/profile_2.webp"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+
+            <div class="user-component__name">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Danny
+              </h4>
+            </div>
+          </div>
+
+          <div class="user-component__column"></div>
         </div>
       </div>
     </main>
@@ -122,10 +200,19 @@
     </nav>
 
     <div id="splash-screen">
-      <i class="fa-solid fa-comment fa-lg"></i>
+      <img src="images/login/loading_1.gif" />
     </div>
 
-    <div id="no-mobile">Your screen is too big.</div>
+    <div id="no-mobile">
+      <p>Your screen is too big.</p>
+
+      <p>Please reduce the screen size.</p>
+
+      <p class="no-mobile__icons">
+        <i class="fa-solid fa-arrow-right"></i>
+        <i class="fa-solid fa-arrow-left"></i>
+      </p>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/4382bb2da3.js"

@@ -1,5 +1,21 @@
+#main-body {
+  height: 100vh;
+  background-image: url(../../images/login/background_1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#login-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .welcome-header {
-  margin: 90px 0px;
+  margin-top: 150px;
+  margin-bottom: 50px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -9,6 +25,8 @@
 .welcome-header__title {
   margin-bottom: 20px;
   font-size: 25px;
+  font-weight: 800;
+  color: #3a3a3a;
 }
 
 .welcome-header__text {
@@ -24,34 +42,77 @@
 
 .login-form__input {
   border: none;
-  padding: 15px 0px;
+  padding: 15px 10px;
   font-size: 18px;
-  margin-bottom: 20px;
 }
 
-.login-form__input:not([type='submit']) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: border-color 0.3s ease-in-out;
+.login-form__input-box input {
+  color: #fff;
+  background-color: var(--sky-color);
+}
+
+.login-form__input-box input:-webkit-autofill,
+.login-form__input-box input:-webkit-autofill:hover,
+.login-form__input-box input:-webkit-autofill:focus,
+.login-form__input-box input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px var(--sky-color) inset;
+  -webkit-text-fill-color: #fff;
+}
+
+.login-form__input-box i {
+  transition: color 0.3s ease-in-out;
 }
 
 .login-form__input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: #fff;
 }
 
-.login-form__input:focus {
-  border-color: var(--yellow);
+.login-form__input-box {
+  border: 1px solid #fff;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.login-form__input-box:nth-child(1) {
+  border-radius: 6px 6px 0 0;
+}
+
+.login-form__input-box:nth-child(2) {
+  position: relative;
+  top: -1px;
+  border-radius: 0 0 6px 6px;
+}
+
+.login-form__input-box:focus-within i {
+  color: #ade8f4;
 }
 
 .login-form__input[type='submit'] {
-  background-color: var(--yellow);
+  margin: 20px 0;
+  background-color: #ade8f4;
   cursor: pointer;
-  padding: 20px 0px;
+  padding: 15px 0px;
   border-radius: 5px;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+.login-form__sub-text {
+  text-align: center;
+  color: #fff;
 }
 
 #login-form a {
   text-align: center;
   text-decoration: none;
   color: inherit;
-  font-size: 16px;
+  font-size: 14px;
+}
+
+#main-body > footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 20px;
+  color: #a1a1a1;
 }

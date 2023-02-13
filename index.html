@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Today I Learned | Kokoa</title>
+    <title>Welcome! | PIXEL TALK</title>
   </head>
-  <body>
+  <body id="main-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -20,42 +20,67 @@
       </div>
 
       <div class="status-bar__column">
-        <span>77%</span>
+        <span>70%</span>
 
-        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
         <i class="fa-solid fa-bolt"></i>
       </div>
     </div>
 
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
+    <main id="login-main">
+      <div id="login-main__wrapper">
+        <header class="welcome-header">
+          <h1 class="welcome-header__title">PIXEL TALK</h1>
+        </header>
 
-      <p class="welcome-header__text">
-        If you have a Kokoa Account, login with your email or phone number.
+        <form action="friends.html" method="get" id="login-form">
+          <div class="login-form__input-box">
+            <i class="fa-solid fa-user"></i>
+
+            <input
+              class="login-form__input"
+              name="username"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="login-form__input-box">
+            <i class="fa-solid fa-lock"></i>
+
+            <input
+              class="login-form__input"
+              name="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <input class="login-form__input" type="submit" value="LOGIN" />
+
+          <div class="login-form__sub-text">
+            <a href="#"> Find Account</a>
+            &nbsp;|&nbsp;
+            <a href="#"> Change Password</a>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>Copyright © Bang. All Rights Reserved.</footer>
+
+    <div id="no-mobile">
+      <p>Your screen is too big.</p>
+
+      <p>Please reduce the screen size.</p>
+
+      <p class="no-mobile__icons">
+        <i class="fa-solid fa-arrow-right"></i>
+        <i class="fa-solid fa-arrow-left"></i>
       </p>
-    </header>
-
-    <form action="friends.html" method="get" id="login-form">
-      <input
-        class="login-form__input"
-        name="username"
-        type="text"
-        placeholder="Email or phone number"
-        required
-      />
-
-      <input
-        class="login-form__input"
-        name="password"
-        type="password"
-        placeholder="Password"
-        required
-      />
-
-      <input class="login-form__input" type="submit" value="Log In" />
-
-      <a href="#">Find Kokoa Account or Password</a>
-    </form>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/4382bb2da3.js"

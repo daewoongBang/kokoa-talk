@@ -8,6 +8,9 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
+.user-component__column img {
+  background-color: #fff;
+}
 
 .user-component__avatar {
   width: 70px;
@@ -20,6 +23,25 @@
 .user-component__title {
   font-weight: 600;
   font-size: 20px;
+}
+
+.user-component__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-color: #005780;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.channel_icon {
+  background-image: url(../../images/icon/ch.png);
+  background-size: 35px 25px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .user-component__subtitle {

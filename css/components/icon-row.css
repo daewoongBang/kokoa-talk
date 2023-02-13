@@ -1,6 +1,7 @@
 .icon-row {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(125px, 1fr));
+  row-gap: 30px;
 }
 
 .icon-row__icon {
