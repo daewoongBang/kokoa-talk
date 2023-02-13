@@ -28,8 +28,8 @@ body {
   padding: 0px 25px 80px 25px;
 }
 
-main {
-  padding: 80px;
+main:not(#login-main) {
+  padding-bottom: 80px;
 }
 
 .theme-background {
