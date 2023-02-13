@@ -25,14 +25,17 @@ body {
 }
 
 .main-screen {
-  padding: 0px var(--horizontal-space);
+  padding: 0px 25px 80px 25px;
+}
+
+main {
+  padding: 80px;
 }
 
 .theme-background {
   height: 100vh;
   background-color: #b1dbef;
   background-image: url(../images/common/background_1.jpeg);
-  /* background-position: bottom; */
   background-size: 120px 120px;
   background-repeat: no-repeat;
   background-position: 100% 90%;
